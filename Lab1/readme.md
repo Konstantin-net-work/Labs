@@ -42,7 +42,7 @@ interface Ethernet3
    no switchport
    ip address 10.0.1.4/31
 !
-
+```
 После настройки интерфейсов была проведена проверка ping'ом связанности.
 
 <img src="2.webp" alt="проверка 1" width="600">
