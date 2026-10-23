@@ -23,7 +23,7 @@
 <br>
 
 ### Пример настройки интерфейсов (Spine-1)
-
+Spine-1
 ```bash
 !
 interface Ethernet1
@@ -42,6 +42,20 @@ interface Ethernet3
    ip address 10.0.1.4/31
 !
 ```
+Leaf-1
+```bash
+!
+interface Ethernet1
+   description to-Spine-1
+   no switchport
+   ip address 10.0.1.1/31
+!
+interface Ethernet2
+   description to-Spine-2
+   no switchport
+   ip address 10.0.2.1/31
+```
+
 После настройки интерфейсов была проведена проверка связанности ping'ом .
 
 <img src="3.webp" alt="проверка 1" width="600">
