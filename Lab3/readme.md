@@ -23,38 +23,31 @@
 <img src="../Lab1/2.webp" alt="Адресное пространство" width="600">
 <br>
 
-### Пример настройки интерфейсов 
-Spine-1
+### Пример настройки устройств
+## Spine-1
+
 ```bash
-!
+router isis 1
+   net 49.0001.0010.0001.0001.0001.00
+   router-id ipv4 10.1.1.1
+   is-type level-2
+   log-adjacency-changes
+   !
+   address-family ipv4 unicast
+```
+
+```bash
 interface Ethernet1
    description to-Leaf-1
    no switchport
    ip address 10.0.1.0/31
-!
-interface Ethernet2
-   description to-Leaf-2
-   no switchport
-   ip address 10.0.1.2/31
-!
-interface Ethernet3
-   description to-Leaf-3
-   no switchport
-   ip address 10.0.1.4/31
-!
+   isis enable 1
+   isis network point-to-point
 ```
-Leaf-1
 ```bash
-!
-interface Ethernet1
-   description to-Spine-1
-   no switchport
-   ip address 10.0.1.1/31
-!
-interface Ethernet2
-   description to-Spine-2
-   no switchport
-   ip address 10.0.2.1/31
+interface Loopback1
+   ip address 10.1.1.1/32
+   isis enable 1
 ```
 
 После настройки интерфейсов была проведена проверка связанности ping'ом .
