@@ -74,8 +74,8 @@ peer-filter Filter-AS
 | Leaf-3     | 10.30.0.0/24  | 10.30.0.2     | 
 
 
-<img src="Ping+trace/L1-to-L2-3_ping.png" alt="проверка 1" width="600">
-<img src="Ping+trace/L1-to-L2-3_ping_tr_offspine_1.png" alt="проверка 2" width="600">
+<img src="Tests/Ping-PC1-to-PC2-PC3.png" alt="проверка 1" width="600">
+<img src="Tests/Trace-PC2-to-PC1.png" alt="проверка 2" width="600">
 
 
 # P.S. Изначально настраивал редистрибьюцию с ограничениями (route-map) но так и не понял какие минусы от фулл-редистр коннектед маршрутов с Leaf-ов, помимо того что адреса интерфейсов между лиф-спайнами передаются. 
