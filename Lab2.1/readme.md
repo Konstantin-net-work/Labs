@@ -48,11 +48,13 @@ interface Ethernet1
 <div align="center">
   <img src="Route+nei+ping/Spine-1.png" alt="Проверка 1" width="600">
   <br>
-  <i>Рис. 1.</i>
+  <i>Рис. 2.</i>
 </div>
-#### Проверка Ping+Traceroute с Leaf-1 к Leaf-2, Leaf-3
+
+#### Проверка Ping+Traceroute с Leaf-1 к Leaf-2, Leaf-3:
+
 <div align="center">
   <img src="Route+nei+ping/L1-to-L2-3_ping_tr.png" alt="Проверка 1" width="600">
   <br>
-  <i>Рис. 1.</i>
+  <i>Рис. 3.</i>
 </div>
