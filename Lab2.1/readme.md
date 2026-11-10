@@ -41,7 +41,7 @@ interface Ethernet1
 
 Скриншоты проверок:
 <div align="center">
-  <img src="8.webp" alt="Проверка 1" width="600">
+  <img src="Route+nei+ping/Leaf-1.png" alt="Проверка 1" width="600">
   <br>
   <i>Рис. 1.</i>
 </div>
