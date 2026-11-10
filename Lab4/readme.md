@@ -10,7 +10,7 @@
 Убедитесь в наличии IP связанности между устройствами в BGP домене
 
 <div align="center">
-  <img src="../Lab1/1.webp" alt="Схема CLOS" width="600">
+  <img src="схема.png" alt="Схема CLOS" width="600">
   <br>
   <i>Рис. 1. Топология сети</i>
 </div>
