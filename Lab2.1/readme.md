@@ -6,9 +6,8 @@
 
 ### План работ:
 1. Настроить OSPF в Underlay сети для IP-связности между всеми сетевыми устройствами.
-2. Зафиксировать в документации план работы, адресное пространство, схему сети и конфигурацию устройств.
+2. Добавить BFD для проверки.
 3. Убедиться в наличии IP-связности между устройствами в OSPF-домене.
-4. Добавить BFD для проверки.
 
 ### Конфигурация устройств
 
@@ -20,7 +19,7 @@ router ospf 1
    max-lsa 12000
 ```
 
-#### Настройка Loopback-интерфейса
+#### Настройка Loopback-интерфейса (Spine-1)
 
 ```bash
 interface Loopback1
@@ -28,13 +27,14 @@ interface Loopback1
    ip ospf area 0.0.0.0
 ```
 
-#### Настройка физического интерфейса (пример для Leaf-3)
+#### Настройка физического интерфейса (пример для Spine-1)
 
 ```bash
-interface Ethernet2
-   description to-Spine-2
+interface Ethernet1
+   description to-Leaf-1
    no switchport
-   ip address 10.0.2.5/31
+   ip address 10.0.1.0/31
+   ip ospf neighbor bfd
    ip ospf network point-to-point
    ip ospf area 0.0.0.0
 ```
