@@ -67,4 +67,4 @@ interface Loopback1
 # P.S. Во время настройки была допущена ошибка в "net"
 Но по причине того что адресация всех устройств начинается с актета "10" оно не отразилось на работоспособности настроеной схемы
 <img src="Area_addr-error/Leaf-1-area-addr.png" alt="проверка 1" width="600">
-<img src="Area_addr-error/Leaf-2-area-addr.png" alt="проверка 2" width="600">
+<img src="Area_addr-error/Leaf-2-area-addr-R.png" alt="проверка 2" width="600">
