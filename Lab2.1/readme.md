@@ -39,7 +39,7 @@ interface Ethernet1
    ip ospf area 0.0.0.0
 ```
 
-Скриншоты проверок:
+#### Скриншоты проверок:
 <div align="center">
   <img src="Route+nei+ping/Leaf-1.png" alt="Проверка 1" width="600">
   <br>
@@ -47,6 +47,12 @@ interface Ethernet1
 </div>
 <div align="center">
   <img src="Route+nei+ping/Spine-1.png" alt="Проверка 1" width="600">
+  <br>
+  <i>Рис. 1.</i>
+</div>
+#### Проверка Ping+Traceroute с Leaf-1 к Leaf-2, Leaf-3
+<div align="center">
+  <img src="Route+nei+ping/L1-to-L2-3_ping_tr.png" alt="Проверка 1" width="600">
   <br>
   <i>Рис. 1.</i>
 </div>
