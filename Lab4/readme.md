@@ -64,6 +64,23 @@ route-map RM-1 permit 10
 peer-filter Filter-AS
    10 match as-range 65120-65130 result accept
 ```
+## Leaf-1
+
+```bash
+router bgp 65121
+   router-id 10.1.2.1
+   maximum-paths 3 ecmp 3
+   neighbor SPINES peer group
+   neighbor SPINES remote-as 65110
+   neighbor SPINES bfd
+   neighbor SPINES timers 1 3
+   neighbor 10.0.1.0 peer group SPINES
+   neighbor 10.0.2.0 peer group SPINES
+   !
+   address-family ipv4
+      neighbor SPINES activate
+      redistribute connected
+```
 
 После настройки интерфейсов была проведена проверка связанности ping'ом и traceroute'ом . Для проверки были добавлены 3 ПК (на каждый из лифов)
 
