@@ -46,7 +46,7 @@ interface Ethernet1
   <i>Рис. 1.</i>
 </div>
 <div align="center">
-  <img src="9.webp" alt="Проверка 1" width="600">
+  <img src="Route+nei+ping/Spine-1.png" alt="Проверка 1" width="600">
   <br>
   <i>Рис. 1.</i>
 </div>
