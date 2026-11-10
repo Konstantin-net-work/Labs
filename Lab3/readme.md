@@ -60,5 +60,5 @@ interface Loopback1
 
 После настройки интерфейсов была проведена проверка связанности ping'ом .
 
-<img src="3.webp" alt="проверка 1" width="600">
-<img src="4.webp" alt="проверка 2" width="600">
+<img src="Ping+trace/L1-to-L2-3_ping.png" alt="проверка 1" width="600">
+<img src="Ping+trace/L1-to-L2-3_ping_tr_offspine_1.png" alt="проверка 2" width="600">
