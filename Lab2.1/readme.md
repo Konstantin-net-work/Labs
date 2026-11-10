@@ -9,6 +9,22 @@
 2. Добавить BFD для проверки.
 3. Убедиться в наличии IP-связности между устройствами в OSPF-домене.
 
+### Топология сети.
+
+<div align="center">
+  <img src="../Lab1/1.webp" alt="Схема CLOS" width="600">
+  <br>
+  <i>Рис. 1. Топология сети</i>
+</div>
+
+<br>
+
+### Таблица адресации
+
+<img src="../Lab1/2.webp" alt="Адресное пространство" width="600">
+<br>
+
+
 ### Конфигурация устройств
 
 #### Пример настройки OSPF-процесса (Spine-1)
@@ -43,12 +59,12 @@ interface Ethernet1
 <div align="center">
   <img src="Route+nei+ping/Leaf-1.png" alt="Проверка 1" width="600">
   <br>
-  <i>Рис. 1.</i>
+  <i>Рис. 2.</i>
 </div>
 <div align="center">
   <img src="Route+nei+ping/Spine-1.png" alt="Проверка 1" width="600">
   <br>
-  <i>Рис. 2.</i>
+  <i>Рис. 3.</i>
 </div>
 
 #### Проверка Ping+Traceroute с Leaf-1 к Leaf-2, Leaf-3:
@@ -56,5 +72,5 @@ interface Ethernet1
 <div align="center">
   <img src="Route+nei+ping/L1-to-L2-3_ping_tr.png" alt="Проверка 1" width="600">
   <br>
-  <i>Рис. 3.</i>
+  <i>Рис. 4.</i>
 </div>
