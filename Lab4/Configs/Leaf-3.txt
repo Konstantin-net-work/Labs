@@ -1,0 +1,80 @@
+! device: Leaf-3 (vEOS-lab, EOS-4.33.1.1F)
+!
+! boot system flash:/vEOS-lab.swi
+!
+no aaa root
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname Leaf-3
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+interface Ethernet1
+   description to-Spine-1
+   no switchport
+   ip address 10.0.1.5/31
+!
+interface Ethernet2
+   description to-Spine-2
+   no switchport
+   ip address 10.0.2.5/31
+!
+interface Ethernet3
+   no switchport
+   ip address 10.30.0.1/24
+!
+interface Ethernet4
+!
+interface Ethernet5
+!
+interface Ethernet6
+!
+interface Ethernet7
+!
+interface Ethernet8
+!
+interface Loopback1
+   ip address 10.1.2.3/32
+!
+interface Management1
+!
+ip routing
+!
+route-map RM-1 permit 10
+   match interface Loopback1
+   set origin incomplete
+!
+peer-filter Filter-AS
+   10 match as-range 65110 result accept
+!
+router bgp 65123
+   router-id 10.1.2.3
+   maximum-paths 3 ecmp 3
+   neighbor SPINES peer group
+   neighbor SPINES remote-as 65110
+   neighbor SPINES bfd
+   neighbor SPINES timers 1 3
+   neighbor 10.0.1.4 peer group SPINES
+   neighbor 10.0.2.4 peer group SPINES
+   !
+   address-family ipv4
+      neighbor SPINES activate
+      redistribute connected
+!
+router multicast
+   ipv4
+      software-forwarding kernel
+   !
+   ipv6
+      software-forwarding kernel
+!
+end
