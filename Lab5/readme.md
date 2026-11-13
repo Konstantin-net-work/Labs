@@ -124,12 +124,12 @@ interface Vxlan1
 
 <img src="Tests-ping/Ping PC1-to-PC2-3.png" alt="проверка 1" width="600">
 
-Скриншоты проверок на устройствах:
-Spine:  <br>
+## Скриншоты проверок на устройствах:
+### Spine:  <br>
 <img src="Screen-show/Spine-1-sh-bgp-sum.png" alt="Spine" width="600">  <br>
-Leaf-1:  <br>
+### Leaf-1:  <br>
 <img src="Screen-show/Leaf-1-Mac-add.png" alt="Leaf-1-Mac-addr" width="600">  <br>
 <img src="Screen-show/Leaf-1-show-bgp.png" alt="Leaf-1-sh-bgp" width="600">  <br>
-Leaf-2:
-<img src="Screen-show/Leaf-2-Mac-add.png" alt="Leaf-2-Mac-addr" width="600">
-<img src="Screen-show/Leaf-2-show-bgp.png" alt="Leaf-2-sh-bgp" width="600">
+### Leaf-2:  <br>
+<img src="Screen-show/Leaf-2-Mac-add.png" alt="Leaf-2-Mac-addr" width="600">  <br>
+<img src="Screen-show/Leaf-2-show-bgp.png" alt="Leaf-2-sh-bgp" width="600">  <br>
