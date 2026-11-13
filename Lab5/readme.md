@@ -122,7 +122,8 @@ interface Vxlan1
 | Leaf-3     | 192.168.1.0/24 | 192.168.1.4   | 
 
 
-<img src="Tests/Ping-PC1-to-PC2-PC3.png" alt="проверка 1" width="600">
+<img src="Tests-ping/Ping-PC1-to-PC2-3.png" alt="проверка 1" width="600">
+
 <img src="Tests/Trace-PC2-to-PC1.png" alt="проверка 2" width="600">
 
 
