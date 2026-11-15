@@ -117,12 +117,9 @@ router bgp 65121
 <img src="Tests/PC-1-ping.png" alt="проверка 1" width="600">
 
 ## Скриншоты проверок на устройствах:
-### Spine:  <br>
-<img src="Screen-show/Spine-1-sh-bgp-sum.png" alt="Spine" width="600">  <br>
+
 ### Leaf-1:  <br>
-<img src="Screen-show/Leaf-1-Mac-add.png" alt="Leaf-1-Mac-addr" width="600">  <br>
-<img src="Screen-show/Leaf-1-show-bgp.png" alt="Leaf-1-sh-bgp" width="600">  <br>
-### Leaf-2:  <br>
-<img src="Screen-show/Leaf-2-Mac-add.png" alt="Leaf-2-Mac-addr" width="600">  <br>
-<img src="Screen-show/Leaf-2-show-bgp.png" alt="Leaf-2-sh-bgp" width="600">  <br>
+<img src="Tests/Leaf-1-sh-vxlan-vni.png" alt="Leaf-1-Mac-addr" width="600">  <br>
+<img src="Tests/Leaf-1-sh-ip-route-vrf.png" alt="Leaf-1-sh-bgp" width="600">  <br>
+
 
