@@ -114,7 +114,7 @@ router bgp 65121
 
 
 
-<img src="Tests-ping/Ping PC1-to-PC2-3.png" alt="проверка 1" width="600">
+<img src="Tests/PC-1-ping.png" alt="проверка 1" width="600">
 
 ## Скриншоты проверок на устройствах:
 ### Spine:  <br>
