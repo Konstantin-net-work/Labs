@@ -10,7 +10,7 @@
 Настроите маршрутизацию между клиентами.
 
 <div align="center">
-  <img src="Схема.png" alt="Схема CLOS" width="600">
+  <img src="схема.png" alt="Схема CLOS" width="600">
   <br>
   <i>Рис. 1. Топология сети</i>
 </div>
