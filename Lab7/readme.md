@@ -55,7 +55,7 @@ interface Ethernet2
    channel-group 1 mode active
 !
 ```
-так же настроен ip адрес на vlan 20 для проверок
+так же настроен ip адрес на интерфейс vlan 20 для проверок
 
 ```bash
 interface Vlan20
